@@ -20,7 +20,7 @@ class Twain < Formula
   def install
     bin.install "twain"
     
-    resource("twain").stage {bin.install "twain" => "twain-service"}
+    resource("twain").stage {bin.install "twain_service" => "twain"}
   end
 end
   
