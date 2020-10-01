@@ -14,7 +14,7 @@ class Twain < Formula
   
   resource "twain" do 
   	url "https://github.com/telred-llc/twain/files/5310935/twain_service.tar.gz"
-  	sha256 "4589cbf96b09dcabeb9d062b1025c485ae6883f9dc71f5582c5874063d5d8065Type a message"
+  	sha256 "4589cbf96b09dcabeb9d062b1025c485ae6883f9dc71f5582c5874063d5d8065"
   end
   
   def install
