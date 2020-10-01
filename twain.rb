@@ -17,7 +17,7 @@ class Twain < Formula
   	sha256 "4589cbf96b09dcabeb9d062b1025c485ae6883f9dc71f5582c5874063d5d8065"
   end
   
-  def installs
+  def install
     bin.install "twain"
     
     resource("twain").stage {bin.install "twain_service" => "twain_service"}
