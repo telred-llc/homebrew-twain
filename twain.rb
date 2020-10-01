@@ -14,10 +14,10 @@ class Twain < Formula
   
   resource "twain" do 
   	url "https://github.com/telred-llc/twain/files/5310935/twain_service.tar.gz"
-  	sha256 "42873246f3fbb37d632b6c4374c88a7b42fcade1c4d09773382af67c51d929ec"
+  	sha256 "4589cbf96b09dcabeb9d062b1025c485ae6883f9dc71f5582c5874063d5d8065"
   end
   
-  def install
+  def installs
     bin.install "twain"
     
     resource("twain").stage {bin.install "twain_service" => "twain_service"}
