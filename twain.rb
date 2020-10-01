@@ -5,7 +5,7 @@ class Twain < Formula
   desc "Cross-platform Text Expander written in Rust"
   homepage "https://github.com/telred-llc/twain"
   url "https://github.com/telred-llc/twain/files/5310936/twain.tar.gz"
-  sha256 "53ae68588564dc5d65ecafdac0f3b5114feeebc6a903aec357d72778e909a218"
+  sha256 "0b911b630da59d921407fab6ea7c7d700e75e693add0d985d3f4892d42141f58"
   version "1.0"
   
   #depends_on "cmake" => :build 
@@ -14,7 +14,7 @@ class Twain < Formula
   
   resource "twain" do 
   	url "https://github.com/telred-llc/twain/files/5310935/twain_service.tar.gz"
-  	sha256 "4589cbf96b09dcabeb9d062b1025c485ae6883f9dc71f5582c5874063d5d8065"
+  	sha256 "42873246f3fbb37d632b6c4374c88a7b42fcade1c4d09773382af67c51d929ec"
   end
   
   def install
