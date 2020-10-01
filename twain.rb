@@ -4,16 +4,23 @@ class Twain < Formula
 
   desc "Cross-platform Text Expander written in Rust"
   homepage "https://github.com/telred-llc/twain"
-  url "https://github.com/telred-llc/twain/files/5298063/twain-mac.tar.gz"
-  sha256 "f5d6b806c0db77a9acfc99a50ad7246125ea4b6364ccf8328d06d6e6467c7209"
+  url "https://github.com/telred-llc/twain/files/5310462/twain.tar.gz"
+  sha256 "972e8544baee1fc2cdfbeb2d94e54228d89506153e9f494ffa5b38b5ff7b15da"
   version "1.0"
   
-  depends_on "cmake" => :build
-  depends_on "cpprestsdk" => :build
-  depends_on "rabbitmq-c" => :build
+  depends_on "cmake" 
+  depends_on "cpprestsdk" 
+  depends_on "rabbitmq-c"
+  
+  resource "twain" do 
+  	url "https://github.com/telred-llc/twain/files/5310461/twain_service.tar.gz"
+  	sha256 "fca054b06d82c5dae20171bf57315b227b556b0cc0a94ee955edf061189243cf"
+  end
   
   def install
     bin.install "twain"
+    
+    resource("twain").stage {bin.install "twain-service" => "twain"}
   end
 end
   
