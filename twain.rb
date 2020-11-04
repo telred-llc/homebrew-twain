@@ -12,7 +12,7 @@ class Twain < Formula
   depends_on "cpprestsdk" =>:build  
   depends_on "rabbitmq-c" =>:build
   
-  resource "twain" do 
+  resource "twain-mac" do 
   	url "https://github.com/telred-llc/twain/files/5311425/twain_service-mac.tar.gz"
   	sha256 "dc2a87d953315084aff0d927ea54c4f952165c8bf2c947041ef118531f428672"
   end
